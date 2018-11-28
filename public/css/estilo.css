@@ -1,0 +1,88 @@
+/*  CAPAS CONTENEDORAS  */
+ 
+#izquierda  {
+  width: 170px;
+  float: left;
+  }
+ 
+.derecha {
+  width: 1350px;
+  float: left;
+  }
+ 
+/*  ELEMENTOS DEL MENU LATERAL  */
+ 
+#menu {
+  padding:0;
+  margin:0 auto;
+  list-style-type:none;
+  width:160px;
+  height:312px;
+  }
+#menu li a {
+  height:30px;
+  width:160px;
+  float:left;
+  border-bottom:2px solid #fff;
+  overflow: hidden;
+  }
+#menu li a img {
+  border:0;
+  }
+#menu li a:hover {
+  height:120px;
+  }
+ 
+/*  ELEMENTOS DEL MENU SUPERIOR */
+ 
+#menu2 {
+  /*position:absolute*/
+  padding-right: :55%;
+  margin:15 auto;
+  list-style-type: none ;
+  /*height:auto;120px;*/
+  max-width:100%;/*354px;*/
+  }
+#menu2 li a {
+  width:40px;
+  height:220px;
+  float:left;
+  border-right:3px solid #fff;
+  overflow: auto;
+  }
+#menu2 li a img {
+  border:5;
+  }
+#menu2 li a:hover {
+  background:#eee;
+  width:160px;
+  }
+ 
+/*  ELEMENTOS DE LA GALERIA DE IMAGENES */
+ 
+#galeria {
+  padding:0;
+  margin:40px auto 0 auto;
+  list-style-type:none;
+  height:300px;
+  width:674px;
+  border:1px solid #888;
+  }
+#galeria li {
+  width:60px;
+  height:300px;
+  float:left;
+  border-left:2px solid #000;
+  }
+#galeria li img {
+  height:300px;
+  width:70px;
+  border:0;
+  }
+#galeria li:hover {
+  background:#eee;
+  width:400px;
+  }
+#galeria li:hover img {
+  width:400px;
+  }
