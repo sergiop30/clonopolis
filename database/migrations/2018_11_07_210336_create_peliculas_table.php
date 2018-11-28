@@ -21,6 +21,7 @@ class CreatePeliculasTable extends Migration
             $table->string('genero');
             $table->string('sinopsis');
             $table->string('precio');
+            $table->string('imagen');
             $table->timestamps();
         });
     }

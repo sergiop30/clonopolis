@@ -108,7 +108,7 @@
     </header>
     <div class="derecha" style= "background-image: url(../img/galaxy.png);">
         <ul id="menu2" compact>
-          <a href="{{ url('/compra') }}"><img src="img/animales.jpg" alt="animales" width= 200px height=250px  title="Animales fantasticos" </a>
+          <a href="{{ route('pelicula.show', $peliculas->id=1) }}"><img src="{{ asset('img/'.$peliculas->imagen='animales'.'.jpg') }}"alt="animales" width= 200px height=250px  title="Animales fantasticos" ></a>
 
           <a href="{{ url('/sobre_nosotros') }}"><img src="img/aquaman.jpg" alt="aquaman" width= 200px height=250px title="Aquaman" /></a>
 
@@ -120,7 +120,7 @@
 
           <a href="{{ url('/sobre_nosotros') }}"><img src="img/ralph.jpg" alt="ralph" width= 200px height=250px title="Ralph" /></a>
           <hr>
-          
+
           <a href="{{ url('/sobre_nosotros') }}"><img src="img/queen.jpg" alt="queen" width= 200px height=250px title="Queen" /></a>
           <a href="{{ url('/sobre_nosotros') }}"><img src="img/matar-o-morir.jpg" alt="matar-o-morir" width= 200px height=250px title="Matar o morir" /></a>
           <a href="{{ url('/sobre_nosotros') }}"><img src="img/grinch.jpg" alt="grinch" width= 200px height=250px title="Grinch" /></a>

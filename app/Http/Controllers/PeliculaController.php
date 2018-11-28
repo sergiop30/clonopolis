@@ -47,7 +47,8 @@ class PeliculaController extends Controller
         'año'=> 'required|integer',
         'genero'=> 'required',
         'sinopsis'=> 'required',
-        'precio'=> 'required'
+        'precio'=> 'required',
+        'imagen'=> 'required'
       ]);
       
       
@@ -60,6 +61,7 @@ class PeliculaController extends Controller
         $pelicula->genero = $request->input('genero');
         $pelicula->sinopsis = $request->input('sinopsis');
         $pelicula->precio = $request->input('precio');
+        $pelicula->imagen = $request->input('imagen');
         $pelicula->save();
       
         
@@ -78,8 +80,9 @@ class PeliculaController extends Controller
      */
     public function show(Pelicula $pelicula)
     {
+        //$nombreImagen = $pelicula;
         //$pelicula = Pelicula::all();
-        return view('peliculas.showPelicula')->with(['peliula'=>$pelicula]);
+        return view('peliculas.showPelicula', compact('pelicula'));
     }
 
     /**
@@ -90,7 +93,7 @@ class PeliculaController extends Controller
      */
     public function edit(Pelicula $pelicula)
     {
-        return view('materias.formMateria')->with(['materia'=> $materium]);
+        return view('peliculas.formPelicula', compact('pelicula'));
     }
 
     /**
@@ -102,12 +105,16 @@ class PeliculaController extends Controller
      */
     public function update(Request $request, Pelicula $pelicula)
     {
-        $materium->materia = $request->nombre_materia;
-        $materium->nrc = $request->nrc;
-        $materium->hora_inicio = $request->horario;
-        $materium->save();
+        $pelicula->nombre = $request->nombre;
+        $pelicula->director = $request->director;
+        $pelicula->año = $request->año;
+        $pelicula->genero = $request->genero;
+        $pelicula->sinopsis = $request->sinopsis;
+        $pelicula->precio = $request->precio;
+        $pelicula->imagen = $request->imagen;
+        $pelicula->save();
       
-        return redirect()->route('materia.show', $materium->id);
+        return redirect()->route('pelicula.show', $pelicula->id);
     }
 
     /**
@@ -118,7 +125,7 @@ class PeliculaController extends Controller
      */
     public function destroy(Pelicula $pelicula)
     {
-        $materium->delete();
-        return redirect()->route('materia.index');
+        $pelicula->delete();
+        return redirect()->route('pelicula.index');
     }
 }
