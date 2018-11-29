@@ -38,5 +38,6 @@ Route::get('/compra', function () {
 
 Route::resource('pelicula', 'PeliculaController');
 Route::resource('promociones', 'PromocionesController');
+Route::resource('cliente', 'clienteController');
 
 Auth::routes();

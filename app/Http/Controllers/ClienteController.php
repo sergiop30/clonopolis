@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cliente;
+use App\Pelicula;
 use Illuminate\Http\Request;
 
 class ClienteController extends Controller
@@ -14,7 +15,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        //
+        $peliculas = Pelicula::all();
+        return view('clientes.indexCliente', compact('peliculas'));
     }
 
     /**

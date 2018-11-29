@@ -110,21 +110,44 @@
         <ul id="menu2" compact>
           <a href="{{ route('pelicula.show', $peliculas->id=1) }}"><img src="{{ asset('img/'.$peliculas->imagen='animales'.'.jpg') }}"alt="animales" width= 200px height=250px  title="Animales fantasticos" ></a>
 
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/aquaman.jpg" alt="aquaman" width= 200px height=250px title="Aquaman" /></a>
+          <a href="{{ route('pelicula.show', $peliculas->id=2) }}"><img src="{{ asset('img/'.$peliculas->imagen='aquaman'.'.jpg') }}"alt="aquaman" width= 200px height=250px title="Aquaman" /></a>
 
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/el-primer-hombre-a-la-luna.jpg" alt="el-primer-hombre-a-la-luna" width= 200px height=250px  title="El primer hombre a la luna" /></a>
+          <a href="{{ route('pelicula.show', $peliculas->id=3) }}"><img src="{{ asset('img/'.$peliculas->imagen='el-primer-hombre-a-la-luna'.'.jpg') }}"alt="el-primer-hombre-a-la-luna" width= 200px height=250px  title="El primer hombre a la luna" /></a>
 
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/venom.jpg" alt="venom" width= 200px height=250px  title="Venom" /></a>
+          <a href="{{ route('pelicula.show', $peliculas->id=10) }}"><img src="{{ asset('img/'.$peliculas->imagen='venom'.'.jpg') }}"alt="venom" width= 200px height=250px  title="Venom" /></a>
 
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/spiderman.jpg" alt="spiderman" width= 200px height=250px title="Spiderman" /></a>
+          <a href="{{ route('pelicula.show', $peliculas->id=9) }}"><img src="{{ asset('img/'.$peliculas->imagen='spiderman'.'.jpg') }}"alt="spiderman" width= 200px height=250px title="Spiderman" /></a>
 
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/ralph.jpg" alt="ralph" width= 200px height=250px title="Ralph" /></a>
+          <a href="{{ route('pelicula.show', $peliculas->id=8) }}"><img src="{{ asset('img/'.$peliculas->imagen='ralph'.'.jpg') }}"alt="ralph" width= 200px height=250px title="Ralph" /></a>
           <hr>
 
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/queen.jpg" alt="queen" width= 200px height=250px title="Queen" /></a>
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/matar-o-morir.jpg" alt="matar-o-morir" width= 200px height=250px title="Matar o morir" /></a>
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/grinch.jpg" alt="grinch" width= 200px height=250px title="Grinch" /></a>
-          <a href="{{ url('/sobre_nosotros') }}"><img src="img/gonjiam.jpg" alt="gonjiam" width= 200px height=250px title="Gonjiam" /></a>
+          <a href="{{ route('pelicula.show', $peliculas->id=7) }}"><img src="{{ asset('img/'.$peliculas->imagen='queen'.'.jpg') }}"alt="queen" width= 200px height=250px title="Queen" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=6) }}"><img src="{{ asset('img/'.$peliculas->imagen='matar-o-morir'.'.jpg') }}"alt="matar-o-morir" width= 200px height=250px title="Matar o morir" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=5) }}"><img src="{{ asset('img/'.$peliculas->imagen='grinch'.'.jpg') }}"alt="grinch" width= 200px height=250px title="Grinch" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=4) }}"><img src="{{ asset('img/'.$peliculas->imagen='gonjiam'.'.jpg') }}"alt="gonjiam" width= 200px height=250px title="Gonjiam" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=11) }}"><img src="{{ asset('img/'.$peliculas->imagen='harry'.'.jpg') }}"alt="harry" width= 200px height=250px title="Harry potter y el prisionero de azkaban" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=12) }}"><img src="{{ asset('img/'.$peliculas->imagen='lalaland'.'.jpg') }}"alt="lalaland" width= 200px height=250px title="La la land" /></a>
+          <hr>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=13) }}"><img src="{{ asset('img/'.$peliculas->imagen='star'.'.jpg') }}"alt="star" width= 200px height=250px title="Star Wars" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=14) }}"><img src="{{ asset('img/'.$peliculas->imagen='titanic'.'.jpg') }}"alt="titanic" width= 200px height=250px title="Titanic" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=15) }}"><img src="{{ asset('img/'.$peliculas->imagen='baywatch'.'.jpg') }}"alt="baywatch" width= 200px height=250px title="Baywatch" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=16) }}"><img src="{{ asset('img/'.$peliculas->imagen='ghost'.'.jpg') }}"alt="ghost" width= 200px height=250px title="Ghost in the Shell" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=17) }}"><img src="{{ asset('img/'.$peliculas->imagen='increibles'.'.jpg') }}"alt="increibles" width= 200px height=250px title="Los increibles" /></a>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=18) }}"><img src="{{ asset('img/'.$peliculas->imagen='harry3'.'.jpg') }}"alt="harry3" width= 200px height=250px title="Harry potter y la orden del Fenix" /></a>
+          <hr>
+
+          <a href="{{ route('pelicula.show', $peliculas->id=19) }}"><img src="{{ asset('img/'.$peliculas->imagen='harry2'.'.jpg') }}"alt="harry2" width= 200px height=250px title="Harry potter y la camara secreta" /></a>
         </ul>
       </div>
 
