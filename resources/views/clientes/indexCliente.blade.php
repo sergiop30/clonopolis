@@ -35,6 +35,28 @@
                 @endforeach
               </body>
             </table>
+            <br>
+            <br>
+            <h2 class="section-heading text-white">Mis promos</h2>
+            <hr class="light my-4">
+            <table class='table text-white'>
+              <thead>
+                <tr>
+                  <th>Promocion</th>
+                  <th>Detalles de la Promocion</th>
+                  <th>ultima actualizacion</th>
+                </tr>
+              </thead>
+              <body>
+                @foreach($promociones as $promociones)
+                <tr>
+                   <td>{{ $promociones->nombre}}</td>
+                   <td>{{ $promociones->detalles }}</td>
+                   <td>{{ $promociones->updated_at }}</td>
+                </tr>
+                @endforeach
+              </body>
+            </table>
         </div>
       </div>
     </div>
